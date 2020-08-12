@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Sean Murphy`,
-    description: `This is a portfolio that showcases the work of your favorite developer, Sean Murphy`,
-    author: `@gatsbyjs`,
+    description: `Full Stack Web Developer`,
+    author: `Sean Murphy`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

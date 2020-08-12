@@ -1,0 +1,20 @@
+header {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+
+.main-header {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+}

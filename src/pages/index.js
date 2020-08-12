@@ -1,23 +1,33 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
 // Styling Imports
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import "../styles/styles.scss"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import gsap from 'gsap'
+import { css } from '@emotion/core'
+import '../styles/constants.scss'
 
 // Component Imports
-import Header from "../components/header"
+import Header from '../components/header'
+import Banner from '../components/banner'
+import Work from '../components/work'
+import About from '../components/about'
+import Footer from '../components/footer'
 
-const IndexPage = () => (
-  <Layout>
-    <Header />
-    <SEO title="Home" />
-    <h1>SEAN MURPHY</h1>
-    <p>Introducing Development with a Sense of Humor</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-  </Layout>
-)
+gsap.from('main-title', { duration: 5, opacity: 0, stagger: 0.5 });
+gsap.to('.main-title', { duration: 2, x: 500, fontColor: '#067b9c' });
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO />
+      <div className="container">
+        <div className="content">
+        </div>
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage

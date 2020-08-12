@@ -3,10 +3,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
-import Header from "../components/header"
+import Layout from './layout'
 
 const About = () => {
-  return <Header />
+  return (
+    <Layout>
+    </Layout>
+  )
 }
 
 export default About
