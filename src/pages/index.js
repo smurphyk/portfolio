@@ -2,11 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 // Styling Imports
-import Layout from '../components/layout'
-import SEO from '../components/seo'
 import gsap from 'gsap'
 import { css } from '@emotion/core'
-import '../styles/constants.scss'
+import '../styles/index.scss'
 
 // Component Imports
 import Header from '../components/header'
@@ -14,19 +12,30 @@ import Banner from '../components/banner'
 import Work from '../components/work'
 import About from '../components/about'
 import Footer from '../components/footer'
+import SEO from '../components/seo'
 
-gsap.from('main-title', { duration: 5, opacity: 0, stagger: 0.5 });
-gsap.to('.main-title', { duration: 2, x: 500, fontColor: '#067b9c' });
+let tl = gsap.timeline();
+
+tl.from('.s', { duration: 1, x: 100, opacity: 0, });
+tl.from('.title-last', { duration: 1, x: -100, opacity: 0, });
+tl.from('.stagger-title', {
+  duration: 1, opacity: 0, y: () => Math.random()
+    * 500 - 200, stagger: .5
+});
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <>
       <SEO />
       <div className="container">
         <div className="content">
+          <Header />
+          <Banner />
+          <About />
         </div>
+        <Footer />
       </div>
-    </Layout>
+    </>
   )
 }
 

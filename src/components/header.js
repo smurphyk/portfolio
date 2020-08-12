@@ -2,14 +2,16 @@ import React from 'react'
 import { scrollTo } from 'gatsby'
 import '../styles/components/header.scss'
 
+var logo = require('../images/logo.png');
+
 const Header = () => {
 
   return (
     <section id="header">
       <header>
-        <div className="main-header">
+        <div className="header-content">
           <div className="logo">
-            <button onClick={() => scrollTo('#header-container')}>SM</button>
+            <img src={logo} className="logo" alt="SM logo"></img>
           </div>
           <div className="navbar">
             <nav>

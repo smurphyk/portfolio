@@ -1,0 +1,16 @@
+@import '../constants.scss';
+
+footer {
+  display: flex;
+  position: static;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  .social-links {
+    display: block;
+    text-align: center;
+    .footer-icon {
+      margin: 0.5rem;
+    }
+  }
+}

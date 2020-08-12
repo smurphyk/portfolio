@@ -1,20 +1,21 @@
+@import '../constants.scss';
+
 header {
-  height: 5rem;
+  height: 4rem;
   position: fixed;
   top: 0;
   width: 100vw;
   z-index: 10;
-
-.main-header {
-  display: flex;
-  box-sizing: border-box;
-}
-
-.navbar {
-  display: flex;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
+  background-color: $light-grey;
+  .header-content {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    .logo {
+      margin-left: 0.5rem;
+    }
+  }
 }

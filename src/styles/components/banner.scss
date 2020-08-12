@@ -1,0 +1,38 @@
+@import '../constants.scss';
+
+.banner {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  text-align: center;
+  .row {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .title-first, .title-last {
+      display: inline-block;
+      font-size: 5rem;
+      color: $navy-blue;
+      filter: drop-shadow(3px 2px 0.2rem #000);
+      margin: 1rem;
+    }
+  }
+}
+
+.scroll {
+  display: block;
+  position: absolute;
+  bottom: 15%;
+  right: 42%;
+  left: 42%;
+  background-color: transparent;
+  border: none;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}

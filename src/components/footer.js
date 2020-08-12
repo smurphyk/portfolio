@@ -3,12 +3,12 @@ import { Link } from 'gatsby'
 import Github from '../images/github.svg'
 import Linkedin from '../images/linkedin.svg'
 import Twitter from '../images/twitter.svg'
-import '../styles/constants.scss'
+import '../styles/components/footer.scss'
 
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <div id="footer-container">
         <h4>
           Still Want More Murphy? Find me:
         </h4>
