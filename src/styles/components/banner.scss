@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   position: relative;
-  height: 120vh;
+  height: 100vh;
   text-align: center;
   .row {
     position: relative;
@@ -19,14 +19,15 @@
       color: $navy-blue;
       filter: drop-shadow(3px 2px .13rem #000);
       font-family: $font;
-      padding: 10% 0;
+      padding: 8% 0;
     }
     .title-space {
       display: inline-block;
       width: 3rem;
     }
   }
-}
+  }
+
 
 .scroll {
   display: block;

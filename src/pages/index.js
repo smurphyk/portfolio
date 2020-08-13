@@ -12,14 +12,13 @@ import About from '../components/about'
 import Footer from '../components/footer'
 import SEO from '../components/seo'
 
-let tl = gsap.timeline({ repeat: 1 });
+let tl = gsap.timeline();
 
 tl.from('.title', {
   duration: 2, opacity: 0, x: () => Math.random()
     * 800 - 500, y: () => Math.random()
       * -200 - 200, stagger: 0.2, ease: 'elastic', rotation: 5000
 });
-
 
 const IndexPage = () => {
   return (
