@@ -29,6 +29,7 @@ const IndexPage = () => {
           <Header />
           <Banner />
           <About />
+          <Work />
         </div>
         <Footer />
       </div>

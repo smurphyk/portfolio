@@ -15,7 +15,6 @@ const About = () => {
         <img className="profile-pic" src={profilePic} alt="Picture of Sean Murphy"></img>
         <div>Sean</div>
       </div>
-      <hr></hr>
       <div className="about">
         <p className="about1">
           My name is Sean Murphy.  I am currently shifting from a career in the service and hospitality industry
@@ -32,7 +31,6 @@ const About = () => {
           creativity, individuality, and personality into every project.
         </p>
       </div>
-      <hr></hr>
     </section>
   )
 }

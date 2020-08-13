@@ -1,0 +1,16 @@
+@import '../constants.scss';
+
+.summary-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5rem 3rem;
+  .summary-title {
+    display: block;
+    width: 100%;
+  .summary {
+    display: inline-block;
+    width: 40%;
+  }
+  }
+}
