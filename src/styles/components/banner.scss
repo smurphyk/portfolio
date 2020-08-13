@@ -1,22 +1,29 @@
 @import '../constants.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 .banner {
   box-sizing: border-box;
   display: flex;
   align-items: center;
   position: relative;
-  height: 70vh;
+  height: 120vh;
   text-align: center;
   .row {
     position: relative;
     width: 100%;
     overflow: hidden;
-    .title-first, .title-last {
+    margin-bottom: 6rem;
+    .title {
       display: inline-block;
       font-size: 5rem;
       color: $navy-blue;
-      filter: drop-shadow(3px 2px 0.2rem #000);
-      margin: 1rem;
+      filter: drop-shadow(3px 2px .13rem #000);
+      font-family: $font;
+      padding: 10% 0;
+    }
+    .title-space {
+      display: inline-block;
+      width: 3rem;
     }
   }
 }
@@ -35,4 +42,5 @@
   outline: none;
   cursor: pointer;
   font-weight: 700;
+  font-family: $font;
 }

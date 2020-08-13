@@ -1,7 +1,7 @@
 @import '../constants.scss';
 
 header {
-  height: 4rem;
+  height: 3rem;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -16,6 +16,18 @@ header {
     width: 100%;
     .logo {
       margin-left: 0.5rem;
+    }
+    .navbar {
+      display: inline-block;
+      width: 85%;
+      .nav-item {
+        margin-right: 3rem;
+        border: none;
+        background-color: transparent;
+        font-size: 115%;
+        font-family: $font;
+        color: $navy-blue;
+      }
     }
   }
 }

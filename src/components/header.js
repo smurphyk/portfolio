@@ -15,9 +15,9 @@ const Header = () => {
           </div>
           <div className="navbar">
             <nav>
-              <button onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
-              <button onClick={() => scrollTo('#Work')}><span data-hover="Work">Work</span></button>
-              <button onClick={() => scrollTo('#Contact')}><span data-hover="Contact">Contact</span></button>
+              <button className="nav-item" onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
+              <button className="nav-item" onClick={() => scrollTo('#Work')}><span data-hover="Work">Work</span></button>
+              <button className="nav-item" onClick={() => scrollTo('#Contact')}><span data-hover="Contact">Contact</span></button>
             </nav>
           </div>
           <div className="dropdown-container">

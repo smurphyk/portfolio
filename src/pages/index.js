@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 // Styling Imports
 import gsap from 'gsap'
-import { css } from '@emotion/core'
 import '../styles/index.scss'
 
 // Component Imports
@@ -14,14 +12,14 @@ import About from '../components/about'
 import Footer from '../components/footer'
 import SEO from '../components/seo'
 
-let tl = gsap.timeline();
+let tl = gsap.timeline({ repeat: 1 });
 
-tl.from('.s', { duration: 1, x: 100, opacity: 0, });
-tl.from('.title-last', { duration: 1, x: -100, opacity: 0, });
-tl.from('.stagger-title', {
-  duration: 1, opacity: 0, y: () => Math.random()
-    * 500 - 200, stagger: .5
+tl.from('.title', {
+  duration: 2, opacity: 0, x: () => Math.random()
+    * 800 - 500, y: () => Math.random()
+      * -200 - 200, stagger: 0.2, ease: 'elastic', rotation: 5000
 });
+
 
 const IndexPage = () => {
   return (
