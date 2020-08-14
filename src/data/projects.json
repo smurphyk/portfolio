@@ -1,0 +1,49 @@
+[
+  {
+    "name": "chat-app",
+    "header": "ChatterBox Chat App",
+    "image": "../images/chat-app-screenshot.png",
+    "description": "A chat app, built using React-Native. Users can sign in, choose a background for the chat screen, send/recieve messages, images, and location, and view/delete old messages when offline. The Gifted Chat package was used to create the UI of the chat screen, and the ImagePicker and maps packages were used to implement the image and location features. Google Firebase and    Firestore were also used to provide storage and authentication, and Expo was used to run the app.",
+    "code": "https://github.com/smurphyk/chat-app",
+    "demo": {
+      "URL": "",
+      "title": "ChatterBox Demo"
+    }
+  },
+  {
+    "name": "movie_api",
+    "header": "Murph's Movies API",
+    "image": "../images/movie-app-screenshot.png",
+    "description": "This is a full stack API that was built using React. Clients can create and edit thier profile, browse movies and their details, and add those movies to a list of favorites. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API that I created from scratch.",
+    "code": "https://github.com/smurphyk/movie_api",
+    "app": "https://murphmoves.herokuapp.com/client",
+    "demo": {
+      "URL": "",
+      "title": "Murph's Movies Demo"
+    }
+  },
+  {
+    "name": "todo-app",
+    "header": "ToDo or not ToDo",
+    "image": "../images/todo-app-screenshot.png",
+    "description": "This is a responsive todo list app built with Vue. Clients can add, edit, delete, and prioritize items to their todo list. This was achieved by implementing a Material Design UI that utilizes the Vue.Draggable package.",
+    "code": "https://github.com/smurphyk/todo-app",
+    "app": "https://murphtodo.netlify.app",
+    "demo": {
+      "URL": "",
+      "title": "ToDo or not ToDo Demo"
+    }
+  },
+  {
+    "name": "meetup-app",
+    "header": "Murph's Meetups",
+    "image": "../images/meetup-app-screenshot.png",
+    "description": "This is a PWA meetup app that was built using React. Clients can find upcoming events anywhere in the world, see the details of each event, and follow a link to rsvp. As a PWA, Murph's Meetups is able to be used offline, displaying a user's cached data. The Moment library was used with Recharts to provide data visualization for how many events occur per day for the next week, how many people are attending, and how many slots are left. Data for this app was retrieved via Axios requests to the Meetup API.",
+    "code": "https://github.com/smurphyk/meetup-app",
+    "app": "https://smurphyk.github.io/meetup",
+    "demo": {
+      "URL": "",
+      "title": "Murph's Meetups Demo"
+    }
+  }
+]

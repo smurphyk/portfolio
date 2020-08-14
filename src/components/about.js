@@ -11,10 +11,11 @@ const About = () => {
   return (
     <section className="about-container">
       <div className="picture-container">
-        <div>Meet</div>
+        <div className="greeting">Meet</div>
         <img className="profile-pic" src={profilePic} alt="Picture of Sean Murphy"></img>
-        <div>Sean</div>
+        <div className="greeting">Sean</div>
       </div>
+      <hr></hr>
       <div className="about">
         <p className="about1">
           My name is Sean Murphy.  I am currently shifting from a career in the service and hospitality industry

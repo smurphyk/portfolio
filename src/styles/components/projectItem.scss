@@ -1,0 +1,46 @@
+@import '../constants.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+.project-item {
+  display: inline-block;
+  border-radius: 1rem 1rem;
+  border: 0.3rem groove $peach;
+  background-image: radial-gradient($light-grey 20%, $navy-blue 85%, $peach );
+  padding: 1rem;
+  width: 25rem;
+  text-align: center;
+  margin: 4rem;
+}
+.item-name {
+  font-family: 'Comfortaa';
+}
+.item-description {
+  font-family: 'Comfortaa';
+}
+.item-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1.3rem;
+  .image-container {
+    padding: 5%;
+    .image {
+      border-radius: 1rem 1rem;
+      filter: drop-shadow(-0.8rem 0.8rem 1rem $light-grey);
+      margin-bottom: 2rem;
+    }
+  }
+  .text-container {
+    height: 100%;
+    padding: 0 5% 5% 5%;
+    background-color: $navy-blue;
+    border-radius: 1rem 1rem;
+    border: 0.2rem outset $light-grey;
+    margin: 0 1.3rem;
+    color: $light-grey;
+    line-height: 1.5rem;
+    letter-spacing: 0.18rem;
+    filter: drop-shadow(0.8rem -0.8rem 1rem $light-grey);
+  }
+}
