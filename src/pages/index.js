@@ -12,7 +12,7 @@ import About from '../components/about'
 import Footer from '../components/footer'
 import SEO from '../components/seo'
 
-let tl = gsap.timeline();
+/* let tl = gsap.timeline();
 
 tl.from('.title', {
   duration: 2, opacity: 0, x: () => Math.random()
@@ -21,6 +21,7 @@ tl.from('.title', {
 });
 
 tl.from('.greeting', { duration: 3.5, x: -200, opacity: 0, stagger: 0.5, ease: 'elastic' });
+*/
 
 const IndexPage = () => {
   return (
