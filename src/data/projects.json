@@ -3,7 +3,7 @@
     "name": "chat-app",
     "header": "ChatterBox Chat App",
     "image": "../images/chat-app-screenshot.png",
-    "description": "A chat app, built using React-Native. Users can sign in, choose a background for the chat screen, send/recieve messages, images, and location, and view/delete old messages when offline. The Gifted Chat package was used to create the UI of the chat screen, and the ImagePicker and maps packages were used to implement the image and location features. Google Firebase and    Firestore were also used to provide storage and authentication, and Expo was used to run the app.",
+    "description": "A React Native chat app designed around the Gifted Chat UI. Using Google Firestore, users experience a real-time chat interface with offline capabilites. See the readme on Github for more details.",
     "code": "https://github.com/smurphyk/chat-app",
     "demo": {
       "URL": "",
@@ -14,7 +14,7 @@
     "name": "movie_api",
     "header": "Murph's Movies API",
     "image": "../images/movie-app-screenshot.png",
-    "description": "This is a full stack API that was built using React. Clients can create and edit thier profile, browse movies and their details, and add those movies to a list of favorites. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API that I created from scratch.",
+    "description": "A full stack API that was built using React. Clients can create and edit thier profile, browse movies and their details, and add those movies to a list of favorites. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API that I created from scratch.",
     "code": "https://github.com/smurphyk/movie_api",
     "app": "https://murphmoves.herokuapp.com/client",
     "demo": {

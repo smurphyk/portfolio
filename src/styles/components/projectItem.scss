@@ -4,8 +4,8 @@
 .project-item {
   display: inline-block;
   border-radius: 1rem 1rem;
-  border: 0.3rem groove $peach;
-  background-image: radial-gradient($light-grey 20%, $navy-blue 85%, $peach );
+  border: 0.3rem groove $dark-grey;
+  background-image: radial-gradient($light-grey 20%, $navy-blue 85%);
   padding: 1rem;
   width: 25rem;
   text-align: center;
@@ -29,6 +29,7 @@
       border-radius: 1rem 1rem;
       filter: drop-shadow(-0.8rem 0.8rem 1rem $light-grey);
       margin-bottom: 2rem;
+      width: 23rem;
     }
   }
   .text-container {

@@ -3,8 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 .about-container{
-  margin: 10rem auto;
-  margin-top: 5rem;
+  margin: 5rem;
+  padding: .002rem 1rem;
+  filter: drop-shadow(2px 1px .1rem $navy-blue);
+  box-shadow: .5rem .5rem 6rem $navy-blue;
+  border-radius: 5rem;
+    }
+.about-content{
+  margin: .6rem auto;
+  border-top: .5rem outset $navy-blue;
+  border-bottom: .5rem outset $light-blue;
+  border-radius: 5rem;
 .picture-container {
   display: flex;
   justify-content: center;
@@ -13,18 +22,16 @@
   letter-spacing: 0.3rem;
   font-family: $secondary-font;
   margin-bottom: 1rem;
-  color: $peach;
-  border-top: 3px outset $peach;
-  border-radius: 20px;
-  filter: drop-shadow(2px 1px .1rem #000);
+  color: $dark-grey;
 .profile-pic {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 5px outset $navy-blue;
-  border-radius: 5%;
+  border: 5px outset $light-grey;
+  border-radius: 20%;
   width: 12rem;
-  margin: 4rem 8rem;
+  margin: 4rem 5rem;
+  box-shadow: .5rem .5rem 5rem $navy-blue;
 }
 }
 
@@ -35,12 +42,41 @@
   line-height: 2.5rem;
   text-align: center;
   padding: 0 5rem;
-  padding-bottom: 2rem;
-  border-radius: 20px;
+  padding-bottom: 4rem;
+  border-radius: 15%;
   color: $navy-blue;
   font-family: 'Comfortaa'; 
-  border-bottom: 3px outset $peach;
   margin: 4rem auto;
   filter: drop-shadow(1px 1px .1rem #000);
+}
+
+body {
+	background-color: #111;
+}
+
+.greeting {
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  letter-spacing: 1px;
+  font-family: 'Great Vibes';
+  letter-spacing: .5rem;
+  margin-top: 3rem;
+}
+
+.greeting-title {
+	background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 10rem;
+  margin: 10px 0;
+  @media (max-width: 0.0625rem) {
+    font-size: 7rem;
+  }
 }
 }

@@ -37,8 +37,8 @@
 .collection-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  //column-gap: 5rem;
-  //row-gap: 5rem;    
+  column-gap: 15%;
+  row-gap: 5rem;    
   width: 60%;
   margin: 0 auto;
   @media (max-width: 112.5rem) {
