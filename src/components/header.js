@@ -1,5 +1,5 @@
 import React from 'react'
-import { scrollTo } from 'gatsby'
+import { scrollTo } from 'gatsby-plugin-smoothscroll'
 import '../styles/components/header.scss'
 
 var logo = require('../images/logo.png');

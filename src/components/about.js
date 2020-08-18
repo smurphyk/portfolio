@@ -1,7 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import { Link } from "gatsby"
 
 import '../styles/components/about.scss';
 
@@ -9,13 +6,14 @@ let profilePic = require('../images/profile.png');
 
 const About = () => {
   return (
-    <section className="about-container">
+    <div className="about-container">
       <div className="about-content">
         <div className="greeting">
-          <h2 className="greeting-title">Meet Sean</h2>
-        </div>
-        <div className="picture-container">
-          <img className="profile-pic" src={profilePic} alt="Picture of Sean Murphy"></img>
+          <span>M</span><span>e</span><span>e</span><span>t</span>
+          <div className="picture-container">
+            <img className="profile-pic" src={profilePic} alt="Sean Murphy"></img>
+          </div>
+          <span>S</span><span>e</span><span>a</span><span>n</span>
         </div>
         <hr></hr>
         <div className="about">
@@ -35,7 +33,7 @@ const About = () => {
         </p>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

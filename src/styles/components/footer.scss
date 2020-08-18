@@ -3,12 +3,12 @@
 
 footer {
   display: flex;
+  background-color: $light-blue;
+  width: 100vw;
   position: static;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  border-top: 3px outset $dark-grey;
-  border-radius: 20px;
   filter: drop-shadow(1px 1px .1rem #000);
   font-size: 120%;
   font-family: 'Comfortaa';

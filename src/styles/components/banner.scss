@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 // Text animation
-$colors: $navy-blue, $dark-grey, $light-grey, $light-blue, ;
+$colors: $navy-blue, $dark-grey, $navy-blue, #000, $light-blue, ;
 $max: length($colors);
 $dash: 70;
 $dash-gap: 10;
@@ -13,33 +13,13 @@ $time-step: $time/$max;
 .banner {
   box-sizing: border-box;
   display: flex;
-  align-items: center;
-  position: relative;
-  height: 100vh;
+  height: 80vh;
   text-align: center;
-  font: 4rem 'Comfortaa', Impact;
-  width: 100%;
+  font: 4rem $font, Impact;
+  width: 100vw;
   text-transform: uppercase;
-  .row {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: 6rem;
-    .title {
-      display: inline-block;
-      font-size: 7rem;
-      color: $navy-blue;
-      filter: drop-shadow(3px 2px .13rem #000);
-      font-family: $font;
-      padding: 8% 0;
-    }
-    .title-space {
-      display: inline-block;
-      width: 3rem;
-    }
+  margin-bottom: 6rem;
   }
-  }
-
 
 .scroll {
   display: block;
@@ -58,7 +38,7 @@ $time-step: $time/$max;
   font-family: $font;
 }
 
-/* Main styles */
+/* Title Animation */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
 
 .text {

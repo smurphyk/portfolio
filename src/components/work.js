@@ -8,13 +8,14 @@ const Work = () => {
   const emphisize = {
     fontWeight: 'bold',
     fontStyle: 'italic',
-    fontFamily: 'Comfortaa;'
+    fontFamily: 'Comfortaa'
   };
 
   return (
     <section id="work">
       <div className="portfolio">
         <h2 className="summary-title">The Legacy</h2>
+        <hr></hr>
         <div className="summary-container">
           <p className="summary">
             I am new to development, but I've caught the bug. I thoroughly enjoy the
@@ -23,7 +24,7 @@ const Work = () => {
             We may fight a lot, but React.js and I have <span style={emphisize}>developed </span>a lasting bond.
           </p>
         </div>
-        <div clasName="collection-grid">
+        <div className="collection-grid">
           <Collection />
         </div>
       </div>

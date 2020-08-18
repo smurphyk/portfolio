@@ -1,7 +1,6 @@
 import React from 'react'
 
 // Styling Imports
-import gsap from 'gsap'
 import '../styles/index.scss'
 
 // Component Imports

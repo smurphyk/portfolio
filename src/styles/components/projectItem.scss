@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 .project-item {
-  display: inline-block;
+  display: flex;
   border-radius: 1rem 1rem;
-  border: 0.3rem groove $dark-grey;
+  filter: drop-shadow(.3rem -.3rem 1rem $navy-blue);
   background-image: radial-gradient($light-grey 20%, $navy-blue 85%);
   padding: 1rem;
   width: 25rem;
@@ -26,6 +26,7 @@
   .image-container {
     padding: 5%;
     .image {
+      border: .1rem solid $light-grey;
       border-radius: 1rem 1rem;
       filter: drop-shadow(-0.8rem 0.8rem 1rem $light-grey);
       margin-bottom: 2rem;

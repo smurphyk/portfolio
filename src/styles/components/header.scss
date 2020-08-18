@@ -1,6 +1,8 @@
 @import '../constants.scss';
 
 header {
+  display: flex;
+  box-sizing: border-box;
   height: 3rem;
   position: fixed;
   top: 0;
