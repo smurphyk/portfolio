@@ -7,7 +7,7 @@ var logo = require('../images/logo.png');
 const Header = () => {
 
   return (
-    <section id="header">
+    <div id="header">
       <header>
         <div className="header-content">
           <div className="logo">
@@ -24,7 +24,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </section>
+    </div>
   )
 }
 

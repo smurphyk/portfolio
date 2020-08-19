@@ -6,7 +6,7 @@ import '../styles/index.scss'
 // Component Imports
 import Header from '../components/header'
 import Banner from '../components/banner'
-import Work from '../components/work'
+import Portfolio from '../components/portfolio'
 import About from '../components/about'
 import Footer from '../components/footer'
 import SEO from '../components/seo'
@@ -19,8 +19,8 @@ const IndexPage = () => {
         <div className="content">
           <Header />
           <Banner />
+          <Portfolio />
           <About />
-          <Work />
         </div>
         <Footer />
       </div>

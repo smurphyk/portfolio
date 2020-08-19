@@ -1,129 +1,59 @@
 @import '../constants.scss';
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
-.about-container{
+#about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0 1rem;
-  width: 100vw;
-  margin-top: 5rem;
-  background-color: $dark-grey;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background-color: $light-grey;
+  font-family: $font;
   filter: drop-shadow(.5rem -.5rem 2rem $dark-grey);
   box-shadow: -.5rem .5rem 2rem $dark-grey;
-  margin: .6rem auto;
-.picture-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 10rem;
-  letter-spacing: 0.3rem;
-  margin: 0 4rem 1rem 5rem;
-  padding: 1rem;
-  border-radius: 5rem;
-  background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
-  background-size: cover;
-  filter: drop-shadow(.5rem -.5rem 2rem $light-grey);
-  box-shadow: -.5rem .5rem 2rem $light-grey;
-.profile-pic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5rem;
-  border: .3rem inset #000;
-  width: 12rem;
-}
+
+  .picture-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    letter-spacing: 0.3rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: .8rem;
+    border-radius: 5rem;
+    background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
+    background-size: cover;
+    filter: drop-shadow(.5rem -.5rem 2rem $light-grey);
+    box-shadow: -.3rem .3rem 2rem $light-grey;
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 4rem;
+    box-shadow: -.3rem .3rem .5rem #000;
+    filter: drop-shadow(.3rem -.3rem .8rem #000);
+    width: 12rem;
+  }
 }
 
-.about {
-  display: block;
+.content {
+  display: flex;
+  width: 60%;
   box-sizing: border-box;
   font-size: 1.5rem;
   line-height: 2.5rem;
   text-align: center;
-  padding: 0 5rem;
-  padding-bottom: 4rem;
   border-radius: 15%;
-  color: $light-blue;
+  color: $navy-blue;
   font-family: $font; 
-  margin: 4rem auto;
- filter: drop-shadow(.1rem .1rem .1rem $navy-blue);
-}
-
-.greeting {
-	text-align: center;
-	color: #FFF;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-  letter-spacing: 1px;
-  font-family: $secondary-font;
-  letter-spacing: .5rem;
-  margin-top: 3rem;
-  @media (max-width: 0.0625rem) {
-    font-size: 7rem;
-    flex-direction: column;
-  }
-}
-
-body {
-  background: black;
-  overflow: hidden;
-  text-align: center;
-  color: transparent;
-  backface-visibility: hidden;
-}
-
-span {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 5s 2s both;
-  font-size: 8rem;
-}
-
-span:nth-child(even){
-  animation-name: smoky-mirror;
-}
-
-@keyframes smoky {
-  60% {
-    text-shadow: 0 0 8rem whitesmoke;
-  }
-  from {
-    transform:
-      translate3d(15rem,-8rem,0)
-      rotate(-90deg)
-      skewX(70deg)
-      scale(1.5);
-    text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
-
-@keyframes smoky-mirror {
-  60% {
-    text-shadow: 0 0 8rem whitesmoke; }
-  from {
-    transform:
-      translate3d(18rem,-8rem,0)
-      rotate(-90deg) 
-      skewX(-70deg)
-      scale(2);
-     text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
-
-@for $item from 1 through 21 {
-  span:nth-of-type(#{$item}){ 
-    animation-delay: #{(($item/10))}s; 
-  }
-} 
+  margin: 1.5rem auto;
+ filter: drop-shadow(.2rem .2rem .2rem $dark-grey);
 }
 
 hr {
-  width: 75%;
+  width: 70%;
+      }
 }

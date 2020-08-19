@@ -4,7 +4,8 @@
 footer {
   display: flex;
   background-color: $light-blue;
-  width: 100vw;
+  filter: drop-shadow(.5rem -.5rem 2rem $light-blue);
+  box-shadow: -.5rem .5rem 2rem $light-blue;
   position: static;
   box-sizing: border-box;
   justify-content: center;

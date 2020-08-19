@@ -38,7 +38,7 @@
     "name": "meetup-app",
     "header": "Murph's Meetups",
     "image": "../images/meetup-app-screenshot.png",
-    "description": "This is a PWA meetup app that was built using React. Clients can find upcoming events anywhere in the world, see the details of each event, and follow a link to rsvp. As a PWA, Murph's Meetups is able to be used offline, displaying a user's cached data. The Moment library was used with Recharts to provide data visualization for how many events occur per day for the next week, how many people are attending, and how many slots are left. Data for this app was retrieved via Axios requests to the Meetup API.",
+    "description": "A React Meetup PWA that utilizes Moment and Recharts to provide an UI with clean data visualization, allowing clients to stay up to date on events in their area.",
     "code": "https://github.com/smurphyk/meetup-app",
     "app": "https://smurphyk.github.io/meetup",
     "demo": {
