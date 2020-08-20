@@ -20,21 +20,21 @@
     font-size: 10rem;
     letter-spacing: 0.3rem;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     padding: .8rem;
     border-radius: 5rem;
     background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
     background-size: cover;
-    filter: drop-shadow(.5rem -.5rem 2rem $light-grey);
-    box-shadow: -.3rem .3rem 2rem $light-grey;
+    filter: drop-shadow(.5rem -.5rem 2rem $dark-grey);
+    box-shadow: -.3rem .3rem 2rem $light-blue;
   .profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
     border-radius: 4rem;
-    box-shadow: -.3rem .3rem .5rem #000;
-    filter: drop-shadow(.3rem -.3rem .8rem #000);
+    box-shadow: -.15rem .15rem .15rem #000;
+    filter: drop-shadow(.15rem -.15rem .15rem #000);
     width: 12rem;
   }
 }
@@ -50,7 +50,6 @@
   color: $navy-blue;
   font-family: $font; 
   margin: 1.5rem auto;
- filter: drop-shadow(.2rem .2rem .2rem $dark-grey);
 }
 
 hr {

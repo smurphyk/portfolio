@@ -2,53 +2,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 .project-item {
-  display: flex;
-  flex-direction: column;
-  border-radius: 1rem 1rem;
+  border-radius: 1.2rem;
   filter: drop-shadow(.3rem -.3rem 1rem $navy-blue);
+  transition: 0.3s;
   background-image: radial-gradient($light-grey 20%, $navy-blue 85%);
-  padding: 1rem;
-  width: 25rem;
-  text-align: center;
-}
-
-.item-name {
-  font-family: $font;
-}
-
-.item-description {
-  font-family: $font;
-}
-
-  .image-container {
+  @media (max-width: 31.25rem) {
+    box-shadow: none;
+  }
+  h2 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.075rem;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 300;
+  }
+  .item-wrapper {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5%;
-  }
-
-    .image {
-      border: .1rem solid $light-grey;
-      border-radius: 1rem 1rem;
-      max-width: 20rem;
-      max-height: 20rem;
-      filter: drop-shadow(-0.8rem 0.8rem 1rem $light-grey);
-      margin-bottom: 2rem;
+    justify-content: space-between;
+    border-radius: 1rem;
+    .image-container {
+      padding: 6% 6% 6% 6%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem; 
+      .image {
+        border-radius: 1rem;
+        filter: drop-shadow(-0.8rem 0.8rem 1rem $light-grey);
+      }
     }
+    .info-container {
+      height: 100%;
+      padding: 0 6% 6% 6%;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
 
-  .header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5% 5% 5%;
-    background-color: $navy-blue;
-    border-radius: 1rem 1rem;
-    border: 0.2rem outset $light-grey;
-    margin: 0 auto;
-    color: $light-grey;
-    line-height: 1.5rem;
-    letter-spacing: 0.18rem;
-    filter: drop-shadow(0.8rem -0.8rem 1rem $light-grey);
-    max-width: 20rem;
-    max-height: 20rem;
+      .item-info{
+        height: 100%;
+        border-radius: 1rem;
+        background-color: $light-grey;
+        filter: drop-shadow(0.8rem -0.8rem 1rem $light-grey);
+        .info-wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: calc(100% - 2.75rem);
+          padding: 2rem 2rem .75rem 2rem;
+          border-radius: 1rem;
+          .button-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            .item-button {
+              border: 0.0625rem solid $navy-blue;
+              color: $light-blue;
+              letter-spacing: 0.109375rem;
+              text-transform: uppercase;
+              border-radius: 0.3rem;
+              padding: 0.5rem;
+              margin-right: 1.25rem;
+              text-decoration: none;
+              transition: 0.3s;
+              font-size: 0.75rem;
+              background-size: 270% 100%;
+              background-position: left top;
+              margin-bottom: 1.25rem;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+            .item-button:hover {
+              background-position: right bottom;
+              color: $navy-blue;
+              cursor: pointer;
+            }
+            .item-button:focus {
+              outline: 0;
+            }
+          }
+        }
+      }
+    }
   }
+}
+.project-item:hover {
+  box-shadow: 0 0.4375rem 0.875rem rgba(32,62,80,0.25), 0 0.3125rem 0.3125rem rgba(32,62,80,0.22);
+  @media (max-width: 31.25rem) {
+    box-shadow: none;
+  }
+}

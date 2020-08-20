@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 // Styling Imports
 import '../styles/index.scss'
@@ -14,7 +15,7 @@ import SEO from '../components/seo'
 const IndexPage = () => {
   return (
     <>
-      <SEO />
+      <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `portfolio`, `sean`, `murphy`]} />
       <div className="container">
         <div className="content">
           <Header />

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
       <div id="footer-container">
         <h3>
-          Still Not Sick of Me?
+          Wait...There's More!
         </h3>
         <div className="social-links">
           <a href="https://www.github.com/smurphyk" target="_blank" rel="noreferrer"><img src={Github} alt="Github icon" className="footer-icon" width="32px" /></a>

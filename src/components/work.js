@@ -5,7 +5,7 @@ import '../styles/components/portfolio.scss'
 
 const Portfolio = () => {
 
-  const emphisize = {
+  const emphasize = {
     fontWeight: 'bold',
     fontStyle: 'italic',
     fontFamily: 'Comfortaa'
@@ -20,8 +20,10 @@ const Portfolio = () => {
           <p>
             I am new to development, but I've caught the bug. I thoroughly enjoy the
             process of creating web applications with nothing but a computer, some know-how,
-            and creativity. I tend to live in the wacky world of JavaScript and its frameworks.
-            We may fight a lot, but React.js and I have <span style={emphisize}>developed </span>a lasting bond.
+            and creativity (and let's not forget...a godly amount of patience and persistence).
+            I tend to live in the wacky world of JavaScript and its frameworks, but hey, I'm up
+            for anything. We may fight a lot, but React.js and I have <span style={emphasize}>developed </span>
+            a lasting bond.
           </p>
         </div>
         <div className="portfolio-grid">
