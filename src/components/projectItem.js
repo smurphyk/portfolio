@@ -10,7 +10,7 @@ const ProjectItem = ({ project }) => {
     <div className={`project-item ${project.name}`}>
       <div className="item-wrapper">
         <div className="image-container">
-          <Image className="image" fluid={project.image.childImageSharp.fluid} alt={`${project.header} visual`} />
+          <Image loading="eager" className="image" fluid={project.image.childImageSharp.fluid} alt={`${project.header} visual`} />
         </div>
         <div className="info-container">
           <div className="item-info">

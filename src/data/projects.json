@@ -14,7 +14,7 @@
     "name": "movie_api",
     "header": "Murph's Movies API",
     "image": "../images/movie-app-screenshot.png",
-    "description": "A full stack API that was built using React. Clients can create and edit thier profile, browse movies and their details, and add those movies to a list of favorites. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API that I created from scratch.",
+    "description": "A full stack API that was built using React. Clients can create and edit their profile, browse movies and their details, and add those movies to a list of favorites. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API that I created from scratch.",
     "code": "https://github.com/smurphyk/movie_api",
     "app": "https://murphmoves.herokuapp.com/client",
     "demo": {

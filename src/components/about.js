@@ -23,6 +23,7 @@ const About = () => {
         <div className="picture-container">
           <Image className="profile-pic" fluid={data.portrait.childImageSharp.fluid} alt="Sean Murphy" />
         </div>
+        <h2>Sean K Murphy</h2>
       </div>
       <hr></hr>
       <div className="text-container">

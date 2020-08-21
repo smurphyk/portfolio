@@ -10,33 +10,64 @@
   padding: 3rem 1rem;
   background-color: $light-grey;
   font-family: $font;
-  filter: drop-shadow(.5rem -.5rem 2rem $dark-grey);
-  box-shadow: -.5rem .5rem 2rem $dark-grey;
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 4rem;
   .picture-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     font-size: 10rem;
     letter-spacing: 0.3rem;
-    margin: 0 auto;
-    margin-bottom: 4rem;
     padding: .8rem;
     border-radius: 5rem;
     background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
     background-size: cover;
-    filter: drop-shadow(.5rem -.5rem 2rem $dark-grey);
+    filter: drop-shadow(.5rem -.5rem 2rem $light-blue);
     box-shadow: -.3rem .3rem 2rem $light-blue;
+    width: 25%;
   .profile-pic {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #000;
     border-radius: 4rem;
-    box-shadow: -.15rem .15rem .15rem #000;
-    filter: drop-shadow(.15rem -.15rem .15rem #000);
-    width: 12rem;
+    box-shadow: -.15rem .15rem .1rem #000;
+    filter: drop-shadow(.15rem -.15rem .1rem #000);
+    width: 95%;
   }
+}
+}
+
+h2 {
+  @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: 6rem;
+  font-family: 'Rock Salt', cursive;
+  color: transparent;
+  background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000;
+  filter: drop-shadow(.5rem -.5rem 2rem $light-blue);
+
 }
 
 .content {
@@ -54,5 +85,6 @@
 
 hr {
   width: 70%;
+  margin: 0 auto;
       }
 }

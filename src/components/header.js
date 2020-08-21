@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import { scrollTo } from 'gatsby-plugin-smoothscroll';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import '../styles/components/header.scss';
 
 var logo = require('../images/logo.png');
@@ -16,9 +15,9 @@ const Header = () => {
           </div>
           <div className="navbar">
             <nav>
-              <Link to="#about" className="nav-item"><span data-hover="About">About</span></Link>
-              <Link to="#portfolio" className="nav-item"><span data-hover="Portfolio">Portfolio</span></Link>
-              <Link to="" target="_blank" className="nav-item"><span data-hover="Resume">Resume</span></Link>
+              <button className="nav-item" onClick={() => scrollTo('#portfolio')}><span data-hover="Portfolio">Portfolio</span></button>
+              <button className="nav-item" onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
+              <a href="" target="_blank" className="nav-item"><span data-hover="Resume">Resume</span></a>
             </nav>
           </div>
           <div className="dropdown-container">
