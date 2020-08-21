@@ -13,6 +13,13 @@ header {
   height: 5rem;
   .logo {
     margin-left: .5rem;
+
+    @media ( max-width: 51rem) {
+      display: flex;
+      margin-left: 0;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .header-content {
     display: flex;
@@ -21,10 +28,22 @@ header {
     justify-content: space-between;
     height: 4rem;
     width: 100%;
+
+    @media (max-width: 51rem) {
+      flex-direction: column;
+    }
+
     .navbar {
       display: inline-block;
       width: 100%;
       text-align: right;
+      
+      @media (max-width: 51rem) {
+        display: block;
+        margin-top: 1rem;
+        text-align: center;
+      }
+
       .nav-item {
         margin-right: 2rem;
         border-left: 3px outset $navy-blue;
@@ -36,6 +55,13 @@ header {
         font-family: $font;
         color: $navy-blue;
         text-decoration: none;
+
+        @media (max-width: 51rem) {
+          margin: 0 .2rem;
+          border: 3px outset $navy-blue;
+          border-radius: .45rem;
+          padding: .3rem;
+        }
       }
     }
   }

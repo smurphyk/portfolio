@@ -28,8 +28,9 @@
     letter-spacing: 0.3rem;
     padding: .8rem;
     border-radius: 5rem;
-    background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
+    background-image: url(https://media.giphy.com/media/3o7aDc9Gxs2TOulDUs/giphy.gif);
     background-size: cover;
+    background-repeat: no-repeat;
     filter: drop-shadow(.5rem -.5rem 2rem $light-blue);
     box-shadow: -.3rem .3rem 2rem $light-blue;
     width: 25%;
@@ -41,7 +42,7 @@
     border-radius: 4rem;
     box-shadow: -.15rem .15rem .1rem #000;
     filter: drop-shadow(.15rem -.15rem .1rem #000);
-    width: 95%;
+    width: 100%;
   }
 }
 }
@@ -59,9 +60,9 @@ h2 {
   font-size: 6rem;
   font-family: 'Rock Salt', cursive;
   color: transparent;
-  background-image: url(https://media.giphy.com/media/ja2racAt8ghB3mgOVL/giphy-downsized.gif);
+  background-image: url(https://media.giphy.com/media/3o7aDc9Gxs2TOulDUs/giphy.gif);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   -webkit-text-stroke-width: 2px;
