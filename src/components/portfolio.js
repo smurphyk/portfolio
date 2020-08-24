@@ -15,7 +15,7 @@ const Portfolio = () => {
     <section id="portfolio">
       <div className="portfolio">
         <div className="portfolio-summary">
-          <h3>The Goods</h3>
+          <h3>Development Projects</h3>
           <hr></hr>
           <p>
             I am new to development, but I've caught the bug. I thoroughly enjoy the
