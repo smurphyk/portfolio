@@ -14,19 +14,20 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <div className="portfolio">
-        <div className="portfolio-summary">
-          <h3>Development Projects</h3>
+        <div className="portfolio__summary">
+          <h3 className="portfolio__title">Development Projects</h3>
           <hr></hr>
-          <p>
-            I am new to development, but I've caught the bug. I thoroughly enjoy the
-            process of creating web applications with nothing but a computer, some know-how,
-            and creativity (and let's not forget...a godly amount of patience and persistence).
-            I tend to live in the wacky world of JavaScript and its frameworks, but hey, I'm up
-            for anything. We may fight a lot, but React.js and I have <span style={emphasize}>developed </span>
+          <p className="portfolio__intro">
+            I am new to development, but I've caught the bug. Building web applications takes a wonderful
+            mix of knowledge, creativity, and...well, an incredible amount of patience and drive. My projects
+            display all of these (except the patience sometimes). I tend to live in the wacky world of
+            JavaScript and its frameworks, but hey, I'm up for anything. We may fight a lot, but React.js and
+            I have <span style={emphasize}>developed </span>
             a lasting bond.
           </p>
+          <hr></hr>
         </div>
-        <div className="portfolio-grid">
+        <div className="portfolio__grid">
           <Collection />
         </div>
       </div>

@@ -1,7 +1,7 @@
 @import '../constants.scss';
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
-.project-item {
+.project__item {
   border-radius: 1.2rem;
   filter: drop-shadow(.3rem -.3rem 1rem $navy-blue);
   transition: 0.3s;
@@ -9,54 +9,55 @@
   @media (max-width: 31.25rem) {
     box-shadow: none;
   }
-  h2 {
+  .item__name {
     text-transform: uppercase;
     font-size: 1.5rem;
     letter-spacing: 0.075rem;
     margin-top: 0;
   }
-  p {
+  .item__description {
     font-size: 1rem;
     line-height: 2rem;
     font-weight: 300;
   }
-  .item-wrapper {
+  .item__wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 1rem;
-    .image-container {
+    .image__container {
+      height: 100%;
       padding: 6% 6% 6% 6%;
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem; 
       .image {
+        height: 100%;
         border-radius: 1rem;
-        filter: drop-shadow(-0.8rem 0.8rem 1rem $light-grey);
+        filter: drop-shadow(-0.8rem 0.8rem 1rem $light-blue);
       }
     }
-    .info-container {
-      height: 100%;
+    .info__container {
       padding: 0 6% 6% 6%;
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
 
-      .item-info{
+      .item__info{
         height: 100%;
         border-radius: 1rem;
         background-color: $light-grey;
-        filter: drop-shadow(0.8rem -0.8rem 1rem $light-grey);
-        .info-wrapper {
+        filter: drop-shadow(0.8rem -0.8rem 1rem $light-blue);
+        .info__wrapper {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           height: calc(100% - 2.75rem);
           padding: 2rem 2rem .75rem 2rem;
           border-radius: 1rem;
-          .button-wrapper {
+          .button__wrapper {
             display: flex;
             flex-wrap: wrap;
-            .item-button {
+            .item__button {
               border: 0.0625rem solid $navy-blue;
               color: $light-blue;
               letter-spacing: 0.109375rem;
@@ -74,12 +75,12 @@
                 margin-right: 0;
               }
             }
-            .item-button:hover {
+            .item__button:hover {
               background-position: right bottom;
               color: $navy-blue;
               cursor: pointer;
             }
-            .item-button:focus {
+            .item__button:focus {
               outline: 0;
             }
           }
@@ -88,8 +89,8 @@
     }
   }
 }
-.project-item:hover {
-  box-shadow: 0 0.4375rem 0.875rem rgba(32,62,80,0.25), 0 0.3125rem 0.3125rem rgba(32,62,80,0.22);
+.project__item:hover {
+  box-shadow: 0 0.4375rem 0.875rem $navy-blue, 0 0.3125rem 0.3125rem $navy-blue;
   @media (max-width: 31.25rem) {
     box-shadow: none;
   }

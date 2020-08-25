@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 // Styling Imports
 import '../styles/index.scss'

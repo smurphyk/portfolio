@@ -42,7 +42,7 @@
     "code": "https://github.com/smurphyk/meetup-app",
     "app": "https://smurphyk.github.io/meetup",
     "demo": {
-      "URL": "",
+      "URL": "../demos/meetup-demo.webm",
       "title": "Murph's Meetups Demo"
     }
   }

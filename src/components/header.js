@@ -17,7 +17,7 @@ const Header = () => {
             <nav>
               <button className="nav-item" onClick={() => scrollTo('#portfolio')}><span data-hover="Portfolio">Portfolio</span></button>
               <button className="nav-item" onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
-              <a href="" target="_blank" className="nav-item"><span data-hover="Resume">Resum&eacute;</span></a>
+              <a href="../../assets/Sean-Murphy-Resume.pdf" target="_blank" className="nav-item"><span data-hover="Resume">Resum&eacute;</span></a>
             </nav>
           </div>
         </div>

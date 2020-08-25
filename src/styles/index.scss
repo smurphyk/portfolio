@@ -1,11 +1,18 @@
 @import './constants.scss';
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   box-sizing: border-box;
-  max-width: 100vw;
+  max-width: 100%;
   margin: 0 auto;
   background-color: $light-grey;
 }

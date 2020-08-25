@@ -11,16 +11,16 @@
   background: $light-grey;
   color: $navy-blue;
   text-align: center;
-  .portfolio-summary {
+  .portfolio__summary {
     width: 30%;
-    h3 {
+    .portfolio__title {
       font-size: 2rem;
       letter-spacing: 0.09375rem;
       margin: 0 auto;
       height: 1.8rem;
       width: 100%;
     }
-    p {
+    .portfolio__intro {
       font-size: 1rem;
       line-height: 2rem;
       font-weight: 300;
@@ -66,13 +66,13 @@
       }
     }
   }
-  .portfolio-grid {
-    width: 60%;
+  .portfolio__grid {
+    width: 100%;
     margin: 0 auto;
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15%;
-    row-gap: 5rem;
+    gap: 8rem;
     @media (max-width: 112.5rem) {
       width: 80%;
     }
@@ -89,7 +89,6 @@
 }
 
 hr {
-  width: 55%;
-  margin: 0 auto;
-  margin-top: 3rem;
+  width: 100%;
+  margin: 3rem auto;
 }
