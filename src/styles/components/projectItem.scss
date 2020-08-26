@@ -29,8 +29,7 @@
     .image__container {
       height: 100%;
       padding: 6% 6% 6% 6%;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem; 
+      border-radius: 1rem;
       .image {
         height: 100%;
         border-radius: 1rem;
@@ -57,9 +56,9 @@
           .button__wrapper {
             display: flex;
             flex-wrap: wrap;
-            .item__button {
+            .item__button, .demo__button {
               border: 0.0625rem solid $navy-blue;
-              color: $light-blue;
+              color: $navy-blue;
               letter-spacing: 0.109375rem;
               text-transform: uppercase;
               border-radius: 0.3rem;
@@ -76,11 +75,23 @@
               }
             }
             .item__button:hover {
-              background-position: right bottom;
-              color: $navy-blue;
+              background-color: $navy-blue;
+              color: $light-grey;
               cursor: pointer;
             }
             .item__button:focus {
+              outline: 0;
+            }
+            .demo__button {
+              background-color: $navy-blue;
+              color: $light-grey;
+            }
+            .demo__button:hover {
+              background-color: $light-grey;
+              color: $navy-blue;
+              cursor: pointer;
+            }
+            .demo__button:focus {
               outline: 0;
             }
           }

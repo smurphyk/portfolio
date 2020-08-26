@@ -26,7 +26,7 @@ const ProjectItem = ({ project }) => {
                   :
                   null}
                 {/* Add modal to display demo vid */}
-                <button className="item__button">Demo</button>
+                <button className="demo__button">Demo</button>
               </div>
             </div>
           </div>

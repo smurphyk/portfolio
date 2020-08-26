@@ -15,7 +15,6 @@ const Portfolio = () => {
     <section id="portfolio">
       <div className="portfolio">
         <div className="portfolio__summary">
-          <h3 className="portfolio__title">Development Projects</h3>
           <hr></hr>
           <p className="portfolio__intro">
             I am new to development, but I've caught the bug. Building web applications takes a wonderful

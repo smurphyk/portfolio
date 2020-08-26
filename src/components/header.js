@@ -2,7 +2,7 @@ import React from 'react';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import '../styles/components/header.scss';
 
-import Resume from '../images/Sean-Murphy-Resume.pdf';
+import Resume from '../images/sean_murphy_junior_developer.pdf';
 
 var logo = require('../images/logo.png');
 
