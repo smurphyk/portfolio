@@ -1,4 +1,5 @@
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Styling Imports
 import '../styles/index.scss'
@@ -15,15 +16,11 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`, `portfolio`, `sean`, `murphy`]} />
-      <div className="container">
-        <div className="content">
-          <Header />
-          <Banner />
-          <Portfolio />
-          <About />
-        </div>
-        <Footer />
-      </div>
+      <Header />
+      <Banner />
+      <Portfolio />
+      <About />
+      <Footer />
     </>
   )
 }
