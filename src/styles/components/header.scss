@@ -1,7 +1,6 @@
 @import '../constants.scss';
 
-header {
-  display: flex;
+/*header {
   box-sizing: border-box;
   height: 3rem;
   position: fixed;
@@ -11,8 +10,6 @@ header {
   background-color: $light-grey;
   padding: .5rem;
   height: 5rem;
-  .logo {
-    margin-left: .5rem;
 
     @media ( max-width: 51rem) {
       display: flex;
@@ -21,21 +18,10 @@ header {
       align-items: center;
       margin: 0 auto;
     }
-  }
-  .header-content {
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    height: 4rem;
-    width: 100%;
-
-    @media (max-width: 51rem) {
-      flex-direction: column;
-    }
 
     .navbar {
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
       width: 100%;
       text-align: right;
       
@@ -45,7 +31,7 @@ header {
         text-align: center;
       }
 
-      .nav-item {
+      .nav__item {
         margin-right: 2rem;
         border-left: 3px outset $navy-blue;
         border-right: 3px outset $navy-blue;
@@ -70,4 +56,4 @@ header {
   button {
     border: none;
   }
-}
+}*/
