@@ -8,15 +8,27 @@ let logo = require('../images/logo.png');
 
 const Header = () => {
 
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
   return (
-    <header id="header">
-      <img src={logo} className="logo" alt="SM logo"></img>
-      <nav className="nav">
-        <button className="nav__item" onClick={() => scrollTo('#portfolio')}><span data-hover="Portfolio">Portfolio</span></button>
-        <button className="nav__item" onClick={() => scrollTo('#about')}><span data-hover="About">About</span></button>
-        <a href={Resume} target="_blank" className="nav__item"><span data-hover="Resume">Resum&eacute;</span></a>
-      </nav>
-    </header>
+    <div class="topnav" id="myTopnav">
+      <button onClick={() => scrollTo("#header")} className="logo__button">
+        <img src={logo} alt="Sean Murphy Logo" className="logo"></img>
+      </button>
+      <a onClick={() => scrollTo("#portfolio")} className="nav__item">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick={myFunction}>
+        <i className="fa fa-bars"></i>
+      </a>
+    </div >
   )
 }
 
