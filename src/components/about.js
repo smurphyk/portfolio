@@ -19,14 +19,14 @@ const About = () => {
 
   return (
     <section id="about">
-      <div className="about-container">
-        <div className="picture-container">
-          <Image className="profile-pic" fluid={data.portrait.childImageSharp.fluid} alt="Sean Murphy" />
+      <div className="about__container">
+        <div className="picture__container">
+          <Image className="profile__pic" fluid={data.portrait.childImageSharp.fluid} alt="Sean Murphy" />
         </div>
         <h2>Sean K Murphy</h2>
       </div>
       <hr></hr>
-      <div className="text-container">
+      <div className="text__container">
         <p className="content">
           I am a promising junior developer that has been molded by a career in the service and hospitality industry.
           I chose to pursue a career in web development because it provides me the ability to help others by solving
