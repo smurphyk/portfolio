@@ -47,8 +47,6 @@
 }
 
 h2 {
-  @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +55,7 @@ h2 {
   margin: 0 auto;
   margin-top: 1rem;
   font-size: 6rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: $font;
   color: transparent;
   background-position: center;
   background-size: cover;
@@ -73,8 +71,9 @@ h2 {
   display: flex;
   width: 60%;
   box-sizing: border-box;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: .5rem;
   text-align: center;
   border-radius: 15%;
   color: $navy-blue;

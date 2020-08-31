@@ -1,9 +1,12 @@
 @import '../constants.scss';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 #header {
   position: fixed;
   width: 100%;
   z-index: 12;
+  background-color: $light-grey;
+  padding: 2rem;
 }
 
 .topnav {
@@ -15,9 +18,9 @@
   float: left;
   background-color: $light-grey;
   border: none;
-  margin: 1rem;
+  margin: .2rem 1rem;
   .logo {
-    width: 4rem;
+    width: 3rem;
   }
 }
 
@@ -27,11 +30,12 @@
   display: block;
   color: $navy-blue;
   text-align: center;
-  padding: 1.4rem 1.6rem;
+  padding: .4rem 1.2rem;
   text-decoration: none;
   font-family: $font;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin: .4rem;
+  background-color: $light-grey;
 }
 
 .logo:hover {
@@ -75,6 +79,7 @@
     display: block;
     margin: 0 auto;
     width: 100%;
+    background-color: $light-grey;
   }
   .logo__button {
     position: fixed;

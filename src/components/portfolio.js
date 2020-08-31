@@ -13,22 +13,20 @@ const Portfolio = () => {
 
   return (
     <section id="portfolio">
-      <div className="portfolio">
-        <div className="portfolio__summary">
-          <hr></hr>
-          <p className="portfolio__intro">
-            I am new to development, but I've caught the bug. Building web applications takes a wonderful
-            mix of knowledge, creativity, and...well, an incredible amount of patience and drive. My projects
-            display all of these (except the patience sometimes). I tend to live in the wacky world of
-            JavaScript and its frameworks, but hey, I'm up for anything. We may fight a lot, but React.js and
+      <div className="portfolio__summary">
+        <hr></hr>
+        <p className="portfolio__intro">
+          I am new to development, but I've caught the bug. Building web applications takes a wonderful
+          mix of knowledge, creativity, and...well, an incredible amount of patience and drive. My projects
+          display all of these (except the patience sometimes). I tend to live in the wacky world of
+          JavaScript and its frameworks, but hey, I'm up for anything. We may fight a lot, but React.js and
             I have <span style={emphasize}>developed </span>
             a lasting bond.
           </p>
-          <hr></hr>
-        </div>
-        <div className="portfolio__grid">
-          <Collection />
-        </div>
+        <hr></hr>
+      </div>
+      <div className="portfolio__grid">
+        <Collection />
       </div>
     </section>
   )

@@ -18,7 +18,7 @@ const Header = () => {
   }
 
   return (
-    <section id="header">
+    <div id="header">
       <button onClick={() => scrollTo("#banner")} className="logo__button">
         <img src={logo} alt="Sean Murphy Logo" className="logo"></img>
       </button>
@@ -32,7 +32,7 @@ const Header = () => {
           </a>
         </div>
       </div >
-    </section>
+    </div>
   )
 }
 
