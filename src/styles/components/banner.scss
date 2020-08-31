@@ -53,3 +53,11 @@ $time-step: $time/$max;
     stroke-dashoffset: -($dash + $dash-gap) * $max;
   }
 }
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+  .banner__title {
+    font-size: 60rem;
+    padding: 5rem 0 0 0;
+    margin: 0 auto;
+  }
+}

@@ -3,12 +3,8 @@
 
 .project__item {
   border-radius: 1.2rem;
-  filter: drop-shadow(.3rem -.3rem 1rem $navy-blue);
   transition: 0.3s;
   background-image: radial-gradient($light-grey 20%, $navy-blue 85%);
-  @media (max-width: 31.25rem) {
-    box-shadow: none;
-  }
   .item__name {
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -40,6 +36,9 @@
       padding: 0 6% 6% 6%;
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem;
+      @media all and (min-width: 320px) and (max-width: 600px) {
+        padding: 6% 0 6% 0;
+      }
 
       .item__info{
         height: 100%;
@@ -53,9 +52,13 @@
           height: calc(100% - 2.75rem);
           padding: 2rem 2rem .75rem 2rem;
           border-radius: 1rem;
+          @media all and (min-width: 320px) and (max-width: 600px) {
+            padding: 2rem 1rem 2rem 1rem;
+          }
           .button__wrapper {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 2rem;
             .item__button, .demo__button {
               border: 0.0625rem solid $navy-blue;
               color: $navy-blue;

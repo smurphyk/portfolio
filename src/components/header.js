@@ -8,7 +8,7 @@ let logo = require('../images/logo.png');
 
 const Header = () => {
 
-  function myFunction() {
+  function dropdown() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += " responsive";
@@ -18,17 +18,21 @@ const Header = () => {
   }
 
   return (
-    <div class="topnav" id="myTopnav">
-      <button onClick={() => scrollTo("#header")} className="logo__button">
+    <section id="header">
+      <button onClick={() => scrollTo("#banner")} className="logo__button">
         <img src={logo} alt="Sean Murphy Logo" className="logo"></img>
       </button>
-      <a onClick={() => scrollTo("#portfolio")} className="nav__item">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-      <a href="javascript:void(0);" class="icon" onclick={myFunction}>
-        <i className="fa fa-bars"></i>
-      </a>
-    </div >
+      <div className="topnav" id="myTopnav">
+        <a href={Resume} target="_blank">Resum&eacute;</a>
+        <a onClick={() => scrollTo("#about")} className="nav__item">About</a>
+        <a onClick={() => scrollTo("#portfolio")} className="nav__item">Portfolio</a>
+        <div className="icon__container">
+          <a href="#!" className="icon" onClick={dropdown}>
+            <i className="fa fa-bars"></i>
+          </a>
+        </div>
+      </div >
+    </section>
   )
 }
 
