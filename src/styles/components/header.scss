@@ -60,7 +60,12 @@
   .topnav a.icon {
     float: right;
     display: block;
+    position: fixed;
+    right: 0;
+    top: .5rem;
     color: $navy-blue;
+    font-family: $font;
+    font-size: 3rem;
   }
 }
 
@@ -74,12 +79,12 @@
   .logo__button {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 1rem;
   }
   .topnav.responsive {
     position: fixed;
     right: 0;
-    top: 4rem;
+    top: 6rem;
   }
   .topnav.responsive a.icon {
     position: fixed;
