@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
 .project__item {
-  margin-top: 5rem;
-  border: .5rem solid #000;
-  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: inherit;
+  justify-content: space-around;
+  margin: 5rem auto;
+  padding: .1rem .3rem 1rem .3rem;
+  border: .8rem groove #000;
+  border-radius: 1rem;
   font-family: $font;
   background-color: $navy-blue;
   background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
@@ -12,42 +17,48 @@
   background-size: cover;
   background-repeat: no-repeat;
   @media (max-width: 31.25rem) {
-    box-shadow: none;
+    width: 100%;
+    margin: 0 auto;
   }
   .item__name {
     text-transform: uppercase;
-    font-weight: 700;
+    filter: drop-shadow(.1rem .1rem .1rem $navy-blue);
     font-size: 1.5rem;
     letter-spacing: 0.075rem;
-    margin-top: 0;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
   }
   .item__description {
+    width: 100%;
+    margin: 0 auto;
     font-size: 1rem;
     line-height: 2rem;
+    letter-spacing: .1rem;
     font-weight: 300;
   }
   .item__wrapper {
-    height: 100%;
+    width: 100%;
     display: flex;
+    flex-wrap: inherit;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 1rem;
     .image__container {
-      padding: 5% 5% 5% 5%;
-      border-top-left-radius: 1rem;
-      border-top-right-radius: 1rem;
+      width: 95%;
+      margin: 0 auto;
+      padding: 1rem 0 2rem 0;
+      box-sizing: border-box;
       .image {
         border-radius: 1rem;
-        filter: drop-shadow(0 0 .5rem $light-grey);
+        @media (max-width: 31.25rem) {
+          width: auto;
+        }
       }
     }
     .info__container {
-      height: 100%;
-      padding: 0 5% 5% 5%;
-      border-bottom-left-radius: 1rem;
-      border-bottom-right-radius: 1rem;
+      width: 100%;
+      padding: 0 5%;
+      margin: 0 auto;
       .item__info{
-        height: 100%;
         border-radius: 1rem;
         background-color: $light-grey;
         font-family: 'Comfortaa', cursive;
@@ -55,26 +66,25 @@
         .info__wrapper {
           display: flex;
           flex-direction: column;
-          justify-content: space-between;
-          height: calc(100% - 2.75rem);
+          flex-wrap: inherit;
+          margin: 0 auto;
           padding: 2rem 2rem .75rem 2rem;
           border-radius: 1rem;
           .button__wrapper {
-            display: flex;
-            flex-wrap: wrap;
+            display: block;
+            margin-top: 1rem;
+            padding: 1.5rem;
             .item__button {
               border: 0.0625rem solid $navy-blue;
               color: $navy-blue;
               letter-spacing: 0.109375rem;
               text-transform: uppercase;
-              border-radius: 0.3rem;
+              border-radius: 0.5rem;
               padding: 0.5rem;
               margin-right: 1.25rem;
               text-decoration: none;
+              font-family: $font;
               font-size: 0.75rem;
-              background-size: 270% 100%;
-              background-position: left top;
-              margin-bottom: 1.25rem;
               &:last-child {
                 margin-right: 0;
               }

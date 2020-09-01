@@ -3,7 +3,7 @@
     "name": "chat-app",
     "header": "ChatterBox Chat App",
     "image": "../images/chat-app-screenshot.png",
-    "description": "A React Native chat app designed around the Gifted Chat UI. Using Google Firestore, users experience a real-time chat interface with offline capabilites. See the readme on Github for more details.",
+    "description": "A PWA chat app that was built using React Native and designed around the Gifted Chat UI. Using Google Firestore, users experience a real-time chat interface with offline capabilities. See the readme on Github for more details.",
     "code": "https://github.com/smurphyk/chat-app",
     "demo": {
       "URL": "",
@@ -14,7 +14,7 @@
     "name": "movie_api",
     "header": "Murph's Movies API",
     "image": "../images/movie-app-screenshot.png",
-    "description": "A full stack API that was built using React. Clients can create and edit their profile, browse movies and their details, and add those movies to a list of favorites. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API that I created from scratch.",
+    "description": "A full stack API that was built using React. Clients can create and edit a profile that includes a list of favorite movies from the main library. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API made utilizing MongoDB and MongoDB Atlas.",
     "code": "https://github.com/smurphyk/movie_api",
     "app": "https://murphmoves.herokuapp.com/client",
     "demo": {
@@ -38,7 +38,7 @@
     "name": "meetup-app",
     "header": "Murph's Meetups",
     "image": "../images/meetup-app-screenshot.png",
-    "description": "A React Meetup PWA that utilizes Moment and Recharts to provide an UI with clean data visualization, allowing clients to stay up to date on events in their area.",
+    "description": "A Meetup PWA, built with React, that utilizes libraries such as Moment and Recharts to provide an UI with clean data visualization, allowing clients sign up for and stay up to date on events in their area.",
     "code": "https://github.com/smurphyk/meetup-app",
     "app": "https://smurphyk.github.io/meetup",
     "demo": {

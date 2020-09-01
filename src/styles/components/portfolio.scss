@@ -12,42 +12,24 @@
   color: $navy-blue;
   text-align: center;
   .portfolio__summary {
-    width: 50%;
+    box-sizing: border-box;
+    width: 60%;
     .portfolio__intro {
+      display: block;
+      width: 100%;
       font-size: 1.5rem;
       line-height: 2.5rem;
       letter-spacing: .3rem;
+      margin: 0 auto;
       margin-bottom: 4rem;
       font-family: $font;
-    }
-
-    @media (max-width: 125rem) {
-      width: 40%;
-    }
-    @media (max-width: 93.75rem) {
-      width: 50%;
-    }
-    @media (max-width: 75rem) {
-      width: 60%;
-    }
-    @media (max-width: 56.25rem) {
-      width: 70%;
-    }
-    @media (max-width: 46.875rem) {
-      width: 80%;
-    }
-    @media (max-width: 40.625rem) {
-      width: 90%;
-    }
-    @media (max-width: 28.75rem) {
-      width: 100%;
     }
   }
   .portfolio__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15rem;
-    row-gap: 5rem;
+    column-gap: 10rem;
+    row-gap: 3rem;
     width: 60%;
     margin: 0 auto;
     @media (max-width: 112.5rem) {

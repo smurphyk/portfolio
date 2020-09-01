@@ -8,7 +8,8 @@ const Portfolio = () => {
   const emphasize = {
     fontWeight: 'bold',
     fontStyle: 'italic',
-    fontFamily: 'Comfortaa'
+    fontFamily: 'Comfortaa',
+    fontSize: 'inherit'
   };
 
   return (
