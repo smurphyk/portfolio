@@ -14,7 +14,6 @@ const Footer = () => {
         <div className="social-links">
           <a href="https://www.github.com/smurphyk" target="_blank" rel="noreferrer"><img src={Github} alt="Github icon" className="footer-icon" width="32px" /></a>
           <a href="https://www.linkedin.com/in/seankmurphy131/" target="_blank" rel="noreferrer"><img src={Linkedin} alt="Linkedin icon" className="footer-icon" width="32px" /></a>
-          <a href="https://https://www.twitter.com/SeanMur03395506" target="_blank" rel="noreferrer"><img src={Twitter} alt="Twitter icon" className="footer-icon" width="32px" /></a>
         </div>
       </div>
       <nav></nav>
