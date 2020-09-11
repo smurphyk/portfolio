@@ -16,7 +16,7 @@
     "image": "../images/movie-app-screenshot.png",
     "description": "A full stack API that was built using React. Clients can create and edit a profile that includes a list of favorite movies from the main library. Other tools used include JWT and Node.js (server side). Data is retrieved by querying a REST API made utilizing MongoDB and MongoDB Atlas.",
     "code": "https://github.com/smurphyk/movie_api",
-    "app": "https://murphmoves.herokuapp.com/client",
+    "app": "https://murphmovies.herokuapp.com/client",
     "demo": {
       "URL": "",
       "title": "Murph's Movies Demo"
